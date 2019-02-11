@@ -30,7 +30,7 @@ contract ERC165 is IERC165 {
     /**
      * @dev implement supportsInterface(bytes4) using a lookup table
      */
-    function supportsInterface(bytes4 interfaceId) external view returns (bool) {
+    function supportsInterface(bytes4 interfaceId) public view returns (bool) {
         return _supportedInterfaces[interfaceId];
     }
 
